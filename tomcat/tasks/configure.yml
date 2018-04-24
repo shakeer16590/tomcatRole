@@ -1,0 +1,9 @@
+---
+- name: edit tomcat-users.xml
+  copy:
+   src: tomcat-users.xml
+   dest: /etc/tomcat7/tomcat-users.xml
+  notify:
+   - restart_tomcat7
+
+...
